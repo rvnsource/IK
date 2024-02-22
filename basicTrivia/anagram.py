@@ -13,6 +13,7 @@ def isAnagram(s, t):
             map[char] += 1
         else:
             map[char] = 1
+    print(map)
 
     for char in t:
         if char in map and map[char] !=0 :
@@ -22,8 +23,8 @@ def isAnagram(s, t):
     return True
 
 # Driver code
-str1 = "gram"
-str2 = "gram"
+str1 = "gramm"
+str2 = "gramm"
 
 # Function call
 if (isAnagram(str1, str2)):
